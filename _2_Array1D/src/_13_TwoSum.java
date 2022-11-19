@@ -14,7 +14,7 @@ import java.util.HashMap;
 public class _13_TwoSum {
 
     // Time Complexity: O(N^2)
-    // Space Complexity: O(N)
+    // Space Complexity: O(1)
 
     public int[] twoSum1(int[] nums, int target) {
 
@@ -33,7 +33,7 @@ public class _13_TwoSum {
     }
 
     // Time Complexity: O(N)
-    // Space Complexity: O(N)
+    // Space Complexity: O(1)
 
     public int[] twoSum2(int[] nums, int target) {
         int[] result = new int[2];
