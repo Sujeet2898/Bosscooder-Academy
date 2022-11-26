@@ -42,7 +42,7 @@ public class _2_TrappingRainWater {
 
         // MaxHeight towards left
         maxLeft[0] = 0;
-        for(int i = 0; i < n; i++){
+        for(int i = 1; i < n; i++){
             maxLeft[i] = Math.max(maxLeft[i - 1], height[i - 1]);
         }
 
