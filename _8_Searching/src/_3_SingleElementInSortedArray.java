@@ -13,7 +13,7 @@ Output: 10
 
 public class _3_SingleElementInSortedArray {
 
-    // Using Bit Manipulation
+    // Using Binary Search
     // Time Complexity: O(logn)
     // Space Complexity: O(1)
     public int singleNonDuplicate(int[] nums) {
