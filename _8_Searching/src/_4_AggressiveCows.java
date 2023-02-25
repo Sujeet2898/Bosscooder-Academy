@@ -88,3 +88,92 @@ public class _4_AggressiveCows {
         return true;
     }
 }
+
+
+----------------------------------------------
+import java.io.*;
+import java.util.*;
+
+class GFG {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int t;
+        t = sc.nextInt();
+        while (t-- > 0) {
+
+            int n;
+            n = sc.nextInt();
+
+            int k;
+            k = sc.nextInt();
+
+            int[] v = new int[n];
+            for (int i = 0; i < n; i++) v[i] = sc.nextInt();
+
+            Solution obj = new Solution();
+            int res = obj.solve(n, k, v);
+
+            System.out.println(res);
+        }
+    }
+}
+
+// } Driver Code Ends
+
+
+// User function Template for Java
+class Solution {
+    
+    public static boolean  isPossibleAnswer(int n, int k,int[] stalls, int dis){
+        
+        int cowsAllocated =1 ;
+        int prevPos = 0;
+        
+        int currStall=1;
+        
+        while(currStall<n){
+            
+            //can i allocate a cow at currStall 
+            
+            if(stalls[currStall]-stalls[prevPos]>=dis){
+                cowsAllocated++;
+                prevPos=currStall;
+                
+                if(cowsAllocated==k){
+                    return true;
+                }
+            }
+            
+            currStall++;
+        }
+        
+        return false;
+        
+    }
+    
+    public static int solve(int n, int k, int[] stalls) {
+        
+        int ans=1;
+        
+        Arrays.sort(stalls);
+        
+        int l=1;
+        int h = stalls[n-1]-stalls[0];
+        
+        while(l<=h){
+            
+            int mid = (l+h)/2;
+            
+            boolean isPossible = isPossibleAnswer(n,k,stalls,mid);
+            
+            if(isPossible){
+                ans=mid;
+                l=mid+1;
+            }else{
+                h=mid-1;
+            }
+        }
+        
+        return ans;
+    }
+}       
