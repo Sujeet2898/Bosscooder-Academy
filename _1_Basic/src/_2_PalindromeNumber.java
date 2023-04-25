@@ -31,7 +31,7 @@ public class _2_PalindromeNumber {
              return false;
          }
     }
-
+  
     public boolean isPalindrome2(int x){
         String str = Integer.toString(x);
         for(int i = 0; i < str.length()/2; i++){
