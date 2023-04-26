@@ -31,7 +31,7 @@ public class _4_DesignParkingSystem {
     public _4_DesignParkingSystem(){
         this.big = 0;
         this.medium = 0;
-        this.small = 0;
+        this.small = 0;   
     }
 
     public _4_DesignParkingSystem(int big, int medium, int small) {
