@@ -31,7 +31,7 @@ public class _5_FizzBuzz {
                 ans.add("Buzz");
             }
             else{
-                ans.add(String.valueOf(i));
+                ans.add(String.valueOf(i));  
             }
         }
 
