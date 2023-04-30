@@ -31,5 +31,5 @@ public class _3_RunningSumOf1dArray {
             nums[i] = nums[i] + nums[i-1];
         }
         return nums;
-    }
+    }  
 }
