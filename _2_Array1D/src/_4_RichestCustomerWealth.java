@@ -29,7 +29,7 @@ public class _4_RichestCustomerWealth {
                 sum += accounts[i][j];
             }
             if(sum > max){
-                max = sum;
+                max = sum;  
             }
         }
         return max;
