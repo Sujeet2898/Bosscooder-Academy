@@ -32,7 +32,7 @@ public class _5_ShuffleTheArray {
     public int[] shuffle2(int[] nums, int n){
         for(int i = 0; i < n; i++){
             // nums = [2,5,1, 2*10001+3, 5*10001+4, 1*10001+7]
-            nums[i+n] = nums[i+n] + nums[i]*10001;
+            nums[i+n] = nums[i+n] + nums[i]*10001;  
         }
         for(int i = 0; i < n; i++){
             nums[2*i] = nums[i+n] / 10001;   // 20005 / 10001 = 2
