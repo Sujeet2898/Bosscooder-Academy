@@ -32,7 +32,7 @@ public class _5_FizzBuzz {
             }
             else{
                 ans.add(String.valueOf(i));  
-            }
+            }  
         }
 
         return ans;
