@@ -21,6 +21,6 @@ public class _6_IsSubSequence {
         // return spoint == s.length();
         if(spoint == s.length()) return true;
         return false;
-    }
+    }  
 }
   
