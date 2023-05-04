@@ -31,7 +31,7 @@ public class _10_ValidParentheses {
 
             // If current character is opening bracket, add it to stack
             if (ch == '[' || ch == '{' || ch == '(') {
-                stack.push(ch);
+                stack.push(ch);  
             }
 
             // Else current character is closing bracket
