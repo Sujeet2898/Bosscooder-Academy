@@ -30,7 +30,7 @@ public class _3_InsertionSort {
         for(int i = 0; i < n; i++) {
             input[i] = s.nextInt();
         }
-        insertionSort(input);
+        insertionSort(input);  
         for(int i = 0; i < n; i++) {
             System.out.print(input[i] + " ");
         }
