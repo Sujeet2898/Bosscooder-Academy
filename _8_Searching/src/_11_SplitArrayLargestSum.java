@@ -30,7 +30,7 @@ public class _11_SplitArrayLargestSum {
         while (left < right){
             int mid = left + (right - left)/2;
             if(feasible(nums, mid, k)){
-                right = mid;
+                right = mid;  
             }
             else {
                 left = mid + 1;
