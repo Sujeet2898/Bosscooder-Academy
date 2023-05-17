@@ -2,7 +2,7 @@
 Question: Split Array Largest Sum
 Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum of any subarray is minimized.
 Return the minimized largest sum of the split.
-A subarray is a contiguous part of the array.
+A subarray is a contiguous part of the array.  
 
 Input: nums = [7,2,5,10,8], k = 2
 Output: 18
